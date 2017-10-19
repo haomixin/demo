@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <style>
+            
+        </style>
+	</head>
+	<body>
+		<textarea id="txt"></textarea>
+		<button id="but">提交</button>
+		
+		<script type="text/javascript">
+			var txt=document.getElementById('txt');
+			var but=document.getElementById('but');
+            txt.oninput=function(){
+				if(txt.value.length<20){
+					but.onclick=function(){
+						alert('成功')
+					}
+				}else{
+						but.disabled=true
+					}
+			}
+		</script>
+	</body>
+</html>
